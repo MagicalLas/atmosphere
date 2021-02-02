@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149370972-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-149370972-1');
+    </script>
+    <meta name="description" content="Las's Magical Book is Persnal Blog for Programmers. This Book written by Las aka Magical Girl. This Book contain 'Magical' Things.">
+    <meta property="og:image" content="/static/las.jpg" />
+    
+
+    <meta name="twitter:title" content="Spring 2주차 회고" />
+    <meta name="twitter:description" content="Las의 Spring 2추가 회고" />
+    <meta name="twitter:image" content="https://magical.dev/static/las.jpg" />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+    <link rel="manifest" href="/favicons/manifest.json">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스프링 2주차 회고</title>
+    <style>
+        /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+        @media screen and (min-width: 601px) {
+            h1 {
+                font-size: 7vw;
+            }
+        }
+
+        /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+        @media screen and (max-width: 600px) {
+            h1 {
+                font-size: 11vw;
+            }
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            line-height: 1.2;
+        }
+
+        .col {
+            position: relative;
+            width: 100%;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+
+        h1 {
+            margin-bottom: .5rem;
+            font-weight: 500;
+            line-height: 1.5;
+            margin-block-start: 0.67em;
+            margin-block-end: 0.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-size: 2.5rem;
+        }
+
+        
+
+        @media (min-width: 992px) {
+            .cover-container {
+                width: 100%;
+            }
+            .cover {
+                padding: 0 20px;
+                width: 100%;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .cover-container {
+                width: 100%;
+            }
+            .cover {
+                padding: 0 20px;
+                width: 520px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cover-container">
+        <div class="cover">
+            <div class="col">
+                <h2>스프링 2주차 회고</h2>
+                <p>
+                    점진적으로 개선해나간다. 회고를 하면 얻을 수 있는 좋은점입니다. 저는 이번주
+                    어떤 것들을 발견했고, 개선했을까요?</p>
+                <p>
+                    > 발견한 것</p>
+                <p>
+                    저는 이번에 테스트 코드 없이 작업을 진행했어요. 사실 js로 작성된 테스트가 있었으니
+                    테스트가 아예 없었다면 거짓말이겠지만, 제가 작성한 테스트는 없었습니다. 이는 저번주와
+                    매우 비교되는 것이었죠. 저는 저번주에 TDD를 했고, 그 리듬이 재밌었어요. 이번주는
+                    꽤나 의도적으로 그렇지 않았는데, 테스트를 짜지 않고 js로 작성된 테스트를 더 많이
+                    사용하고자 한 목적도 있었죠. 그러나 주요한 목적은 테스트 없는 환경의 개발이었어요.
+                    실제로 진행해보니 "이거 잘 작동하나"라는 의문이 들었고, 그때마다 서버를 띄우는 것은
+                    매우 귀찮은 일이었죠. 그래서 저는 자신있게 말할 수 있습니다. 저는 유닛 테스트를 짜면서
+                    진행하는 개발을 할 때 더 안정감을 느껴요.</p>
+                <p>
+                    이번 과제는 꽤 아쉬움이 많이 남습니다. 월요일에는 친구가 집에 오면서 과제를 진행하지
+                    못했고, 개인적인 문제로 화, 수, 목요일에는 과제에 집중하지 못하는 시간이 늘어났습니다.
+                    심지어 토요일에는 생일이었죠. 이러한 환경에서 과제에 집중할 수 없어서 힘들었습니다.
+                    이런 상황에서 저번주 회고에서 알아낸 "괜찮아, 난 쓰레기를 낼꺼야!"를 되새기면서
+                    목표를 쪼개기 시작했습니다.</p>
+                <p>
+                    리팩터링은 뒷전이었고 일단 과제를 끝내자라는 목표를 잡았죠. 그 과정에는 어떠한 죄악도
+                    괜찮았습니다. 그래서 그 전에 작성한 코드를 가져오고, 지적된 내용을 바로 고치지 않았죠.
+                    그 과정에서 모든 테스트가 통과하는 금요일 저녁에는 그전까지 있던 부담감이 줄어들었습니다.
+                    그리고 오늘도 리팩터링을 계속 적용하고 있습니다.</p>
+                <p>프론트엔드를 전에는 꽤나 재미있게 했었는데, 안한지 시간이 오래되다보니 부담이 있었습니다.
+                    이걸 내가 잘 할 수 있을까? 같은 불안이었죠. 하다보니 나아지긴 했지만, 누군가와 같이
+                    진행했다면 더 낫지 않았을까 생각이 들었습니다. 저는 여전히 프론트엔드를 작성하는데에
+                    불안감이 있습니다.
+                </p>
+                <p>
+                    > 개선할 점
+                </p>
+                <p>
+                    커밋로그의 경우에 대충 작성한 경우가 꽤나 있었습니다. 이건 저번주에서도 찾은 점이지만,
+                    다음주에는 더 개선을 해볼까합니다. 작업자체는 꽤 잘 나누어졌지만, 커밋로그에 담긴 정보가
+                    부족한 경우가 있었습니다. 사실 이런 부분을 리뷰해달라고 코멘트를 드린적이 있긴 하지만,
+                    제가 제 커밋 하나하나를 리뷰하진 않았습니다. 다음주에는 커밋에 대한 리뷰를 적극적으로
+                    받아보면 좋겠네요.
+                </p>
+                <p>
+                    Javadoc을 아직까지 작성하지 않았는데, 작성해야겠어요.</p>
+                <p>저번주의 경우에는 회고에 대한 회고나, 프로그램을 작성하다가 회고를 하는 경우도 있었지만, 
+                    이번에는 PR에 명시적으로 회고를 하지 않았는데 많이 아쉽네요. 다음주에는 첫번째 주에 했던
+                    것처럼 회고를 자주 해봐야겠어요.
+                </p>
+                <p></p>
+                <p>- Magical Las aka Wonho.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
